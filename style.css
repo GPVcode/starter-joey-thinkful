@@ -1,0 +1,66 @@
+header{
+    /* set abckground to blue */
+    background-color: #0B1C51;
+    /* add space underneath header so that main content is not so close to nav*/
+    margin-bottom: 40px;
+
+}
+
+header h1{
+    color: #fff;
+    /* center name text */
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 52px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    /*get rid of default space to the left of unordered list*/
+    padding-left: 0;
+    /* get rid of bullet points from the list items*/
+    list-style: none;
+}
+
+header nav ul li a {
+    color: fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+
+@media all and (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    header h1{
+        margin: 14px 0;
+        padding-top: 0;
+        font-size: 48px;
+    }
+    header nav{
+        font-family: Montserrat;
+        margin-top: 8px;
+        align-items: center;
+        font-size: 20px;
+    }
+    header nav ul li a:hover{
+        color: #bdbdbd;
+        
+        
+    }
+}
